@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DivineSeek</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <!-- You can optionally put a logo or title here -->
+    </div>
+    <div class="nav-right">
+      <img src="{{ url_for('static', filename='img/krish.jpg') }}" alt="User Profile" class="profile-icon">
+    </div>
+  </nav>
+  <div class="container">
+    <div class="title-row">
+  <img src="{{ url_for('static', filename='img/Img1.png') }}" alt="Left Icon" class="title-icon">
+  <h1 class="title">DivineSeek</h1>
+  <img src="{{ url_for('static', filename='img/Img2.png') }}" alt="Right Icon" class="title-icon">
+    </div>
+
+    <p class="subtitle">Choose your Divine guide</p>
+    <div class="card-grid">
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/krish.jpg') }}" alt="Chat with Vasudev">
+        <h3>Shree Krishna</h3>
+        <a href="/chat/krishna" class="start-btn">Start Conversation</a>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/rama.jpg') }}" alt="Chat with Rama">
+        <h3>Shree Rama</h3>
+        <a href="/chat/rama" class="start-btn">Start Conversation</a>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/hanuman.jpg') }}" alt="Chat with Mahabali">
+        <h3>Lord Hanuman</h3>
+        <a href="/chat/hanuman" class="start-btn">Start Conversation</a>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='img/hara.jpg') }}" alt="Chat with Shiva">
+        <h3>Mahadeva</h3>
+        <a href="/chat/mahadev" class="start-btn">Start Conversation</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

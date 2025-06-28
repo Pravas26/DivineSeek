@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ character }} Chat - DivineSeek</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="chat-container">
+    <h2 class="chat-title">{{ character }}'s Chat</h2>
+    <div id="chat-box" class="chat-box"></div>
+    <div class="input-row">
+      <input type="text" id="user-input" placeholder="Ask something divine..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const character = "{{ character }}";
+  </script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
